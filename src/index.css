@@ -1,35 +1,29 @@
+/* 1. Core Tailwind Layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: 'Inter', sans-serif !important;
-}
-
-body, html {
-  font-family: 'Inter', sans-serif !important;
-}
-
+/* 2. Global Root Settings */
 :root {
   color-scheme: dark;
 }
 
-html,
-body,
-* {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
-}
-
 * {
   box-sizing: border-box;
+  /* Hard font locking to absolute standard modern typography */
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* 3. Layout & Reset Rules */
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent ugly horizontal layout shaking on mobile */
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
+  /* High-quality dark aesthetic gradient background */
   background: linear-gradient(135deg, #020617 0%, #111827 100%);
-}
-
-#root {
-  min-height: 100vh;
 }
