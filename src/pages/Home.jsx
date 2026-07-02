@@ -24,31 +24,39 @@ const previewTasks = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans">
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col px-4 py-5 sm:px-5 sm:py-6 lg:px-8">
-        <header className="flex flex-col items-start gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-3 backdrop-blur sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col px-4 py-4 sm:px-5 sm:py-5 lg:px-8">
+        <header className="flex h-14 w-full items-center justify-between border-b border-gray-800 bg-slate-950/80 px-4 py-3 backdrop-blur md:px-8">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-500/20 text-sm font-semibold text-cyan-400">
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-cyan-500/20 text-sm font-semibold text-cyan-400">
               TF
             </div>
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">TaskFlow</p>
-              <p className="text-xs text-slate-400">Productivity, simplified</p>
+              <p className="text-[11px] text-slate-400">Productivity, simplified</p>
             </div>
           </div>
 
-          <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:items-center">
+          <div className="flex items-center gap-2">
             <Link
               to="/login"
-              className="flex w-full items-center justify-center rounded-full border border-white/10 px-4 py-2 text-center text-sm font-medium text-slate-200 transition hover:bg-white/10 sm:w-auto"
+              className="flex items-center justify-center rounded-full border border-white/10 px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-white/10 sm:hidden"
             >
               Login
             </Link>
-            <Link
-              to="/signup"
-              className="flex w-full items-center justify-center rounded-full bg-cyan-500 px-4 py-2 text-center text-sm font-semibold text-slate-950 transition hover:bg-cyan-400 sm:w-auto"
-            >
-              Get Started
-            </Link>
+            <div className="hidden items-center gap-2 md:flex">
+              <Link
+                to="/login"
+                className="flex items-center justify-center rounded-full border border-white/10 px-4 py-2 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+              >
+                Login
+              </Link>
+              <Link
+                to="/signup"
+                className="flex items-center justify-center rounded-full bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400"
+              >
+                Get Started
+              </Link>
+            </div>
           </div>
         </header>
 
