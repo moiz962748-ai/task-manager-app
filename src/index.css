@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: 'Inter', sans-serif !important;
+}
+
+body, html {
+  font-family: 'Inter', sans-serif !important;
+}
+
 :root {
   color-scheme: dark;
 }
