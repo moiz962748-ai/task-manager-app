@@ -34,7 +34,7 @@ export default function TaskForm({ userId, onTaskAdded }) {
   }
 
   return (
-    <form onSubmit={handleAddTask} className="space-y-3">
+    <form onSubmit={handleAddTask} className="space-y-3 px-1 sm:px-4">
       <div className="flex flex-col gap-3 sm:flex-row">
         <input
           type="text"
@@ -46,7 +46,7 @@ export default function TaskForm({ userId, onTaskAdded }) {
         <button
           type="submit"
           disabled={loading}
-          className="rounded-2xl bg-cyan-500 px-4 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:bg-cyan-400/70"
+          className="w-full rounded-2xl bg-cyan-500 px-4 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:bg-cyan-400/70 sm:w-auto"
         >
           {loading ? 'Adding...' : 'Add task'}
         </button>

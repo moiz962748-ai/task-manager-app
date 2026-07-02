@@ -47,8 +47,8 @@ export default function Dashboard({ session, onLogout }) {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col lg:flex-row">
-        <aside className="w-full border-b border-white/10 bg-slate-900/70 p-6 lg:w-72 lg:border-b-0 lg:border-r">
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col md:flex-row">
+        <aside className="w-full border-b border-white/10 bg-slate-900/70 p-4 sm:p-6 lg:w-72 lg:border-b-0 lg:border-r">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-500/20 text-lg font-semibold text-cyan-400">
               TF
@@ -72,11 +72,11 @@ export default function Dashboard({ session, onLogout }) {
         </aside>
 
         <main className="flex-1 p-4 sm:p-6 lg:p-8">
-          <header className="mb-6 rounded-3xl border border-white/10 bg-slate-900/70 p-5 shadow-xl shadow-cyan-950/20">
+          <header className="mb-6 rounded-3xl border border-white/10 bg-slate-900/70 p-4 shadow-xl shadow-cyan-950/20 sm:p-5 md:p-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
                 <p className="text-sm font-medium text-cyan-400">Good day</p>
-                <h1 className="text-2xl font-semibold text-white">Your action center</h1>
+                <h1 className="text-2xl font-semibold text-white sm:text-3xl">Your action center</h1>
                 <p className="mt-1 text-sm text-slate-400">
                   Keep momentum on projects and finish what matters most.
                 </p>
@@ -88,7 +88,7 @@ export default function Dashboard({ session, onLogout }) {
             </div>
           </header>
 
-          <section className="grid gap-4 md:grid-cols-3">
+          <section className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-5">
               <p className="text-sm text-slate-400">Total tasks</p>
               <p className="mt-2 text-3xl font-semibold text-white">{metrics.total}</p>

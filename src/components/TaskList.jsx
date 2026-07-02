@@ -40,7 +40,7 @@ export default function TaskList({ tasks, setTasks }) {
       {tasks.map((task) => (
         <li
           key={task.id}
-          className={`flex items-center justify-between rounded-2xl border p-4 transition ${
+          className={`flex flex-col gap-3 rounded-2xl border p-4 transition sm:flex-row sm:items-center sm:justify-between ${
             task.is_complete
               ? 'border-emerald-500/20 bg-emerald-500/10'
               : 'border-white/10 bg-slate-950/60 hover:border-cyan-400/40 hover:bg-slate-800/70'
@@ -80,7 +80,7 @@ export default function TaskList({ tasks, setTasks }) {
             type="button"
             onClick={() => deleteTask(task.id)}
             aria-label="Delete task"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-slate-900/60 text-slate-400 transition hover:border-rose-400/40 hover:text-rose-300"
+            className="flex h-10 w-10 items-center justify-center self-end rounded-full border border-white/10 bg-slate-900/60 text-slate-400 transition hover:border-rose-400/40 hover:text-rose-300 sm:self-auto"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
               <path d="M4 7h16M9 7V4h6v3m-8 0 1 13h10l1-13" strokeLinecap="round" strokeLinejoin="round" />

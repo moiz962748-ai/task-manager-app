@@ -35,10 +35,10 @@ export default function Signup() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-950 px-4 py-10 text-slate-100">
-      <div className="w-full max-w-md rounded-3xl border border-white/10 bg-white/10 p-8 shadow-2xl shadow-cyan-950/30 backdrop-blur">
-        <div className="mb-8">
+      <div className="w-full max-w-md rounded-3xl border border-white/10 bg-white/10 p-4 shadow-2xl shadow-cyan-950/30 backdrop-blur sm:p-6 md:p-8">
+        <div className="mb-6 sm:mb-8">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">TaskFlow</p>
-          <h1 className="mt-3 text-3xl font-semibold text-white">Create your workspace</h1>
+          <h1 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">Create your workspace</h1>
           <p className="mt-2 text-sm text-slate-400">
             Start organizing your projects with clarity and momentum.
           </p>
